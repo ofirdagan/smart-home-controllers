@@ -5,6 +5,8 @@ Useful controllers for automating your smart home
 
 * [Broadlink](#broadlink)
 * [Chromecast](#chromecast)
+* [FaceApi](#face-api)
+* [SonOff](#SonOff)
 
 
 ### Broadlink
@@ -30,4 +32,29 @@ broadlinkRecord.startRecording();
 
 ```javascript
 const {chromecast} = require('smart-home-controllers');
+chromecast.play();
+chromecast.pause();
+```
+
+### Face Api
+
+#### Usage
+
+```javascript
+const {faceApi} = require('smart-home-controllers');
+faceApi.isPerson({imageUrl: string, subscriptionKey: string, personId: string}): Promise<boolean>;
+```
+
+### SonOff
+
+#### Usage
+
+* `config.json` should look like [this](https://github.com/ofirdagan/smart-home-controllers/blob/master/src/config.json)
+```javascript
+const {SonOff} = require('smart-home-controllers');
+const pathToConfig = path.resolve(__dirname, './config.json'); 
+config = JSON.parse(fs.readFileSync(pathToConfig));
+sonOff= new SonOff(config.sonOff);
+sonOff.connectToFirstDevice();
+sonOff.sendCommand();
 ```
