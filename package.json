@@ -1,0 +1,17 @@
+{
+  "name": "smart-home-controllers",
+  "version": "1.0.0",
+  "description": "useful controllers for automating your smart home",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ofirdagan@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chromecast-js": "https://github.com/ofirdagan/chromecast-js/tarball/0c6d2d5bc51b0671af733fa668ba07c67fbd1259",
+    "broadlinkjs": "^0.1.0",
+    "lodash": "^4.17.10"
+  }
+}

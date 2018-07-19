@@ -1,0 +1,10 @@
+{
+  "sonOff": {
+    "authenticationToken" : "{{YOUR_TOKEN}}",
+    "apiHost" : "https://cn-api.coolkit.cc:8080",
+    "webSocketApi" : "cn-long.coolkit.cc"
+  },
+  "faceApi": {
+    "Ocp-Apim-Subscription-Key": "{{YOUR_SUBSCRIPTION_KEY}}"
+  }
+}
