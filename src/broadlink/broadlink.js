@@ -16,9 +16,9 @@ class Broadlink {
     });
   }
 
-  runCommand(command) {
+  runCommand(commandFile) {
     this.connect().then(device => {
-      const cmd = fs.readFileSync(path.join(`${__dirname}/../commands/${command}`));
+      const cmd = fs.readFileSync(commandFile);
       device.sendData(cmd);
     });
   }
