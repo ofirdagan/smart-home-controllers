@@ -6,7 +6,7 @@ Useful controllers for automating your smart home
 * [Broadlink](#broadlink)
 * [Chromecast](#chromecast)
 * [FaceApi](#face-api)
-* [SonOff](#SonOff)
+* [SonOff](#sonoff)
 
 
 ### Broadlink
