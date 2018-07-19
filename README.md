@@ -1,5 +1,5 @@
 # Smart Home Controllers
-Ready to use, simple and useful controllers for automating your smart home
+Ready to use, useful and simple controllers for automating your smart home
 
 ### Available Controllers:
 
